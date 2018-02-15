@@ -30,7 +30,7 @@ export default class TopMenu extends React.Component{
                     <button className="dropbtn">View</button>
                     <div className="dropdown-content">
                         <div className = "sub-dropdown" >
-                            Font Size
+                            Font Size <span><i className = "fa fa-angle-right" ></i></span>
                             <div className = "sub-dropdown-content" >
                                 <div className = "menu">Bigger</div>
                                 <div className = "menu">Smaller</div>
@@ -38,7 +38,7 @@ export default class TopMenu extends React.Component{
                             </div>
                         </div>
                         <div className = "sub-dropdown" >
-                            Sort Type
+                            Sort Type <span><i className = "fa fa-angle-right" ></i></span>
                             <div className = "sub-dropdown-content" >
                                 <div className = "menu">Last Modified</div>
                                 <div className = "menu">Last Creaed</div>
@@ -47,7 +47,7 @@ export default class TopMenu extends React.Component{
                             </div>
                         </div>
                         <div className = "sub-dropdown" >
-                            Note Display
+                            Note Display <span><i className = "fa fa-angle-right" ></i></span>
                             <div className = "sub-dropdown-content" >
                                 <div className = "menu">Comfy</div>
                                 <div className = "menu">Condensed</div>
@@ -55,7 +55,7 @@ export default class TopMenu extends React.Component{
                             </div>
                         </div>
                         <div className = "sub-dropdown" >
-                            Theme
+                            Theme <span><i className = "fa fa-angle-right" ></i></span>
                             <div className = "sub-dropdown-content" >
                                 <div className = "menu">Light</div>
                                 <div className = "menu">Dark</div>

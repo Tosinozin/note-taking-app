@@ -13,6 +13,62 @@ export default class MainViewSect3 extends React.Component{
                         <h2>sukura</h2>
                         <p>Momopok</p>
                     </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
+                    <div className="note">
+                        <h2>yahaha</h2>
+                        <p>huhuru</p>
+                    </div>
+                    <div className="note">
+                        <h2>sukura</h2>
+                        <p>Momopok</p>
+                    </div>
                 </div>
             </div>
         )
