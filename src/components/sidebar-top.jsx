@@ -5,8 +5,8 @@ export default class SideBarTop extends React.Component{
         return(
             <div className = "side-bar-top" >
                 <div className = "content">
-                    <h3>All Notes</h3>
-                    <h3>Trash</h3>
+                    <h3><i className = "fa fa-file" ></i>All Notes </h3>
+                    <h3><i className = "fa fa-trash" ></i>Trash</h3>
                 </div>
             </div>
         )

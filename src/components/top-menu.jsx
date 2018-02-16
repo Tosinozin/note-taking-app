@@ -75,7 +75,7 @@ export default class TopMenu extends React.Component{
                 <div className="dropdown">
                     <button className="dropbtn">Help</button>
                     <div className="dropdown-content">
-                        <div className = "menu border-bottom" href="#">Help & Support</div>
+                        <div className = "menu">Help & Support</div>
                         <div className = "menu">About SimpleNote</div>
                     </div>
                 </div>
