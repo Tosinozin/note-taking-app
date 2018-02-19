@@ -6,8 +6,8 @@ export default class MainViewSect3 extends React.Component{
             <div className = "sect3" >
                 <div className = "note-list">
                     <div className="note">
-                        <h2>yahaha</h2>
-                        <p>huhuru</p>
+                        <h2>yahaha cugbucgd siusdgi gdsuggewuhewi</h2>
+                        <p>huhuru hofiilhwioahewiehfoeewipweofoeioqwhn</p>
                     </div>
                     <div className="note">
                         <h2>sukura</h2>

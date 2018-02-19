@@ -270,10 +270,14 @@ body{
             h2{
                 color: #555;
                 font-weight: 500;
+                height: 26px;
+                overflow: hidden;
                 // font-size: 20px;
             }
             p{
                 color: #777;
+                height: 17px;
+                overflow: hidden;
             }
         }
         .sect4{
