@@ -11,15 +11,14 @@ export default class MainViewSect2 extends React.Component{
     }
 
     OpenInfoBar(){
-        
         this.setState({showInfoBar : !this.state.showInfoBar});
         
         if(this.state.showInfoBar === true){
-            document.querySelector('.info-bar').style.display = "block";
-            document.querySelector('.main-view').style.marginLeft = "-350px";
-        }else{
             document.querySelector('.info-bar').style.display = "none";
             document.querySelector('.main-view').style.marginLeft = "0";
+        }else{
+            document.querySelector('.info-bar').style.display = "block";
+            document.querySelector('.main-view').style.marginLeft = "-350px";
         }
     }
 
