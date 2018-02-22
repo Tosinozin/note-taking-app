@@ -59,13 +59,15 @@ class  NoteStore {
         for (let i = 0; i < this.notes.length; i++) {
             if (this.notes[i]._id === id) {
                 this.now = i;
-                this.willIt();
             }
         }
+        console.log(id);
+        this.currentNote = this.notes[this.now];
     }
 
-    willIt(){
-        console.log(this.now);
+    currentNote = {
+        text : null,
+        title: null
     }
 }
 
