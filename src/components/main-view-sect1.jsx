@@ -1,4 +1,5 @@
 import React from 'react';
+import store from '../NoteStore';
 
 export default class MainViewSect1 extends React.Component{
     constructor(props){
@@ -6,11 +7,9 @@ export default class MainViewSect1 extends React.Component{
         this.state = {
             showSideBar : true,
         }
-
-        this.OpenSideBar = this.OpenSideBar.bind(this);
     }
 
-    OpenSideBar(){
+    openSideBar(){
         this.setState({showSideBar : !this.state.showSideBar});
         
         if(this.state.showSideBar === true){
@@ -21,17 +20,18 @@ export default class MainViewSect1 extends React.Component{
             document.querySelector('.main-view').style.marginLeft = "0";
         }
     }
+    createNote(){
+        store.createNote();
+    }
     render(){
         return(
             <div className = "sect1" >
                 <div className="options">
-                    <i onClick = {this.OpenSideBar} className = "fa fa-tags fa-2x" ></i>
-                    {/* <form onSubmit={(e) =>{e.preventDefault()}} action="get"> */}
+                    <i onClick = {this.openSideBar.bind(this)} className = "fa fa-tags fa-2x" ></i>
                         <input 
                             onChange = {(e) =>{e.preventDefault();}}
                             type="text"/>
-                    {/* </form> */}
-                    <i className = "fa fa-file fa-2x" ></i>
+                    <i onClick = {this.createNote.bind(this)} className = "fa fa-file fa-2x" ></i>
                     
                 </div>
             </div>

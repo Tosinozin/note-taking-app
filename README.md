@@ -1,2 +1,2 @@
 A note-taking app
-desktop view
+strictly desktop view

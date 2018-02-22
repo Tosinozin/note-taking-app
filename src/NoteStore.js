@@ -1,4 +1,4 @@
-import { autorun, computed, observable } from 'mobx';
+import { computed,observable } from 'mobx';
 
 
 // class Note {
@@ -41,18 +41,34 @@ import { autorun, computed, observable } from 'mobx';
 
 class  NoteStore {
     @observable notes = [
-
+        
     ];
+    @observable now = 0;
 
-    createNote(value){
-        this.notes.push(value);
+    createNote(text){
+        let value = text || '';
+        let note = {
+            _id : Date.now(),
+            text : value ,
+            title: value.split(/\n/g)[0]
+        }
+        this.notes.push(note);
+    }
+
+    presentNote(id){
+        for (let i = 0; i < this.notes.length; i++) {
+            if (this.notes[i]._id === id) {
+                this.now = i;
+                this.willIt();
+            }
+        }
+    }
+
+    willIt(){
+        console.log(this.now);
     }
 }
 
 var store = window.store = new NoteStore()
 
 export default store
-
-autorun(()=>{
-    console.log(store.notes[0]);
-})

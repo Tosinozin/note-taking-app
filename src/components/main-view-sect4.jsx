@@ -4,18 +4,20 @@ import { observer } from 'mobx-react';
 
 @observer
 export default class MainViewSect4 extends React.Component{
-    createNew(e){
-        if(e.which === 13){
-            store.createNote(e.target.value);
-            e.target.value="";
-        }
-    }
+    // createNew(e){
+        
+    //     if(e.which === 92){
+            
+    //         store.createNote(e.target.value);
+    //         e.target.value="";
+    //     }
+    // }
     render(){
         return(
             <div className= "sect4" >
                     <div className="text-area">
                         <textarea 
-                            onKeyPress= {this.createNew.bind(this)}
+                            // onKeyPress= {this.createNew.bind(this)}
                             name="" id="" cols="30" rows="10"></textarea>
                     </div>
                     
