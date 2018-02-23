@@ -8,10 +8,6 @@ export default class MainViewSect3 extends React.Component{
         return(
             <div className = "sect3" >
                 <div className = "note-list">
-                    {/* <div className="note">
-                        <h2>Yahaha</h2>
-                        <p>huhuru</p>
-                    </div> */}
                     {this.renderNotes()}
                 </div>
             </div>
