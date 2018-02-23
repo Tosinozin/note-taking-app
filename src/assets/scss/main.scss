@@ -263,6 +263,13 @@ body{
             .note{
                 padding-top: 10px;
                 border-bottom: 1px solid #ddd;
+                cursor: pointer;
+
+                &.active{
+                    h2,p{
+                    color: #69afdd;
+                    }
+                }
             }
             h2, p{
                 padding-bottom: 5px;
@@ -271,9 +278,10 @@ body{
             h2{
                 color: #555;
                 font-weight: 500;
-                height: 26px;
+                height: 20px;
                 overflow: hidden;
                 font-size: 20px;
+                margin-bottom: 2px;
             }
             p{
                 color: #777;

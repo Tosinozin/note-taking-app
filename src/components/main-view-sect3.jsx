@@ -19,11 +19,11 @@ export default class MainViewSect3 extends React.Component{
     }
     renderNotes(){
         let  notes = [];
-        store.notes.forEach( (note) => {
+        store.notes.reverse().forEach( (note) => {
             notes.push(
-                <div onClick = {()=>store.presentNote(note._id)} key= {note._id} className="note">
-                    <h2>{note.title || "New Note"}</h2>
-                    <p>{note.text}</p>
+                <div onClick = {()=>store.presentNote(note._id)} key= {note._id} className= {store.currentNote._id === note._id ? "note active" : "note"}>
+                    <h2>{note.title || "New Note...."}</h2>
+                    <p>{note.text.split(/\n/g).filter((note,i) => i === 0 ? false : true).join(' ')}</p>
                 </div>
             );
         });

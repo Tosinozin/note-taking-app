@@ -12,12 +12,14 @@ export default class MainViewSect4 extends React.Component{
     //         e.target.value="";
     //     }
     // }
+
     render(){
         return(
             <div className= "sect4" >
                     <div className="text-area">
                         <textarea 
-                            // onKeyPress= {this.createNew.bind(this)}
+                            value = {store.currentNote.text}
+                            onChange = {evt=>{ store.updateCurrentNote(evt.target.value);}}
                             name="" id="" cols="30" rows="10"></textarea>
                     </div>
                     

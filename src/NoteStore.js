@@ -1,4 +1,4 @@
-import { computed,observable } from 'mobx';
+import { observable } from 'mobx';
 
 
 // class Note {
@@ -50,9 +50,15 @@ class  NoteStore {
         let note = {
             _id : Date.now(),
             text : value ,
-            title: value.split(/\n/g)[0]
+            title: value.split(/\n/g)[0],
         }
         this.notes.push(note);
+        for (let i = 0; i < this.notes.length; i++) {
+            if (this.notes[i]._id === note._id) {
+                this.now = i;
+            }
+        }
+        this.currentNote = this.notes[this.now];
     }
 
     presentNote(id){
@@ -61,13 +67,20 @@ class  NoteStore {
                 this.now = i;
             }
         }
-        console.log(id);
+        
         this.currentNote = this.notes[this.now];
+        
     }
 
+    updateCurrentNote(text){
+        this.currentNote.text = text;
+        this.currentNote.title = text.split(/\n/g)[0]
+    }
+
+    @observable
     currentNote = {
-        text : null,
-        title: null
+        // text : "",
+        // title: ''
     }
 }
 
