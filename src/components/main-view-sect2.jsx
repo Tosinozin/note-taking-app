@@ -1,4 +1,5 @@
 import React from 'react';
+import store from '../NoteStore';
 
 export default class MainViewSect2 extends React.Component{
     constructor(props){
@@ -22,6 +23,9 @@ export default class MainViewSect2 extends React.Component{
         }
     }
 
+    deleteNote(){
+        store.deleteNote();
+    }
 
     render(){
         return(
@@ -29,7 +33,7 @@ export default class MainViewSect2 extends React.Component{
                 <div className="sect2-container">
                     <i className = "fa fa-history fa-2x" ></i>
                     <i className = "fa fa-upload fa-2x" ></i>
-                    <i className = "fa fa-trash fa-2x" ></i>
+                    <i onClick= {this.deleteNote} className = "fa fa-trash fa-2x" ></i>
                     <i onClick = {this.OpenInfoBar} className = "fa fa-info-circle fa-2x" ></i>
                 </div>
             </div>

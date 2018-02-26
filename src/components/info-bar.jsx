@@ -1,6 +1,9 @@
 import React from 'react';
 import ToggleButton from 'react-toggle-button';
+import { observer } from 'mobx-react';
+import store from '../NoteStore';
 
+@observer
 export default class InfoBar extends React.Component{
     constructor(props){
         super(props);
@@ -18,8 +21,8 @@ export default class InfoBar extends React.Component{
                         <h3>INFO</h3>
                         <h2>Modified</h2>
                         <p>Feb 15, 2018 10:18 am</p>
-                        <h2>173 words</h2>
-                        <h2>1062 characters</h2>
+                        <h2>{store.NoOfWords} words</h2>
+                        <h2>{store.NoOfChars} characters</h2>
                     </div>
                 </div>
 
